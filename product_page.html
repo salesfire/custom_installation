@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Product Page</title>
+
+        <script async src="https://cdn.salesfire.co.uk/code/{SITE_ID}.js"></script>
+        <script>
+            window.sfDataLayer = window.sfDataLayer || [];
+            window.sfDataLayer.push({
+                "ecommerce" : {
+                    "view": {
+                        "sku": "220165",
+                        "parent_sku": "220164",
+                        "name": "Zip Through Silicone Croc Hooded Sweat",
+                        "variant": "Colour: GREEN, Size: XL",
+                        "brand": "Lacoste Live",
+                        "category": "Mens > Clothing > Hoodies",
+                        "price": 95.83,
+                        "currency": "GBP",
+                    }
+                }
+            });
+
+            function addToBasket()
+            {
+                window.sfDataLayer.push({
+                    "ecommerce" : {
+                        "add": {
+                            "sku": "220165",
+                            "parent_sku": "220164",
+                            "name": "Zip Through Silicone Croc Hooded Sweat",
+                            "variant": "Colour: GREEN, Size: XL",
+                            "brand": "Lacoste Live",
+                            "category": "Mens > Clothing > Hoodies",
+                            "price": 95.83,
+                            "quantity": 1,
+                            "currency": "GBP",
+                        }
+                    }
+                });
+            }
+        </script>
+    </head>
+    <body>
+        This is a product page.
+
+        <button onclick="addToBasket()">Add to Basket</button>
+    </body>
+</html>
